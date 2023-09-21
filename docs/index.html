@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Documento HTML -->
+<html lang="en">
+  <!-- El Idioma de la Pagina -->
+
+  <head>
+    <!-- La cabecera -->
+    <title>Navbar Component</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Metadatos -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <!-- El Cuerpo del Documento -->
+    <div class="container">
+      <!-- Un Contenedor que se centra en medio -->
+      <div class="row">
+        <!-- Creo una fila, espacio hacia abajo que hace mas grande el container -->
+        <div class="col-md-12 border border-primary mt-2">
+          <!-- Que Utilice las 12 Columnas, que tenga un borde, que el borde fuera del color azul primario y que tuviera un espacio del margen -->
+          <h1 class="text-center">Navbar Component</h1>
+          <!-- Titulo, con el texto centrado -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Se crea una navbar, se expande el navbar cuando tiene espacio, navbar color gris, fondo color gris -->
+            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- Enlace del navbar primero as grande que no lleva a ningun lado -->
+
+            <!-- Defino un boton con atributos y clases -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-expanded="false">
+              <!-- Que aparezca y desaparezca el boton de navegacion, que sea de tipo boton, cuando lo señalemos se muestre/oculte, le damos un objetivo para su atributo colapsable, que activa o desactiva el menu desplegable, es para definir que primero este oculto y si cambia de estado que se muestre -->
+              <span class="navbar-toggler-icon"></span>
+              <!-- Le damos ese estilo caracteristico de un boton de navegacion -->
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Que el boton este colapsado, t lo otro es para darle estilo bonito, el id es por el targer de l44 -->
+              <ul class="navbar-nav mr-auto">
+                <!-- Lista desordenada, que se vean como botones de navegacion y tener el margen a la derecha que empuja elementos a la izquierda, recomedado -->
+                <li>
+                  <!-- Elemento de una lista, que se marque como activo el home -->
+                  <a class="nav-link" href="#">Home</a>
+                  <!-- Que este acomodado el item, no apunta a nada -->
+                </li>
+                <li>
+                  <!-- Nuevo elemento de la lista -->
+                  <a class="nav-link" href="#">Link</a>
+                  <!-- Que este enlace este acomodado -->
+                </li>
+                <li class="dropdown">
+                  <!-- Una lista, que dentro tenga mas enlaces -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <!-- Un enlace, para mantenerlo como los demas, para que sea un menu desplegable, que no lleve a nada, le asignamos un id, que sea un boton, que tenga mas enlaces y que no salga expandido -->
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- Que sea un menu desplegable y la accion que hace -->
+                    <a class="dropdown-item" href="#">Action</a>
+                    <!-- Que salga con estilo de navbar, y que no lleve a nada -->
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <!-- Que salga con estilo de navbar, y que no lleve a nada -->
+                    <div class="dropdown-divider"></div>
+                    <!-- Una barra que divida el menu desplegable -->
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <!-- Que salga con estilo de navbar, y que no lleve a nada -->
+                  </div>
+                </li>
+                <li>
+                  <!-- Un nuevo enlace -->
+                  <a
+                    class="nav-link disabled"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Disabled</a
+                  >
+                  <!-- Mismo estilo, que se vea mas claro (desabilitado), que no lleve a nada, no es accesible con la tecla tab y lo ponemos como deabilitado -->
+                </li>
+              </ul>
+
+              <form class="form-inline my-2 my-lg-0">
+                <!-- Formulario en linea, le asigno un margen de 2 cuando este colapsado, y que no tenga margenes cuando este ampliado -->
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search" />
+                <!-- Una caja de texto, que tenga estilo input lindo, dejo un espacio entre ambos, su tipo sera de busqueda y lo que dice adentro -->
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit">
+                  Search
+                </button>
+                <!-- Defino un boton, color de su borde, que tenga un margen cuando este colapsado, y en pantallas pequeas que no tenga division en eje y -->
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <!-- Activo Script jQuery -->
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <!-- Activo Script Bootstrap -->
+  </body>
+</html>
